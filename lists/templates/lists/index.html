@@ -15,7 +15,12 @@
     
        <input type="text"> <button>Add a task</button>
 
+
+
     <ul>
+        {% for i in todo_tasks %}
+        <li>{{i.text}}</li>
+        {% endfor %}
         <li>run 30 mins</li>
         <li>make coffee</li>
     </ul>
